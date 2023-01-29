@@ -14,7 +14,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: 15
+        node-version: 14
 
     - name: Install dependencies
       run: |
@@ -23,7 +23,6 @@ jobs:
         
     - name: serveur
       run: |
-        cd Kanap/back
         node server
 
     - name: Deploy site
@@ -31,5 +30,5 @@ jobs:
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: main
-        FOLDER: front
+        FOLDER: Kanap/front
  
