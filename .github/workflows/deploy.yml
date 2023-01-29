@@ -23,6 +23,7 @@ jobs:
         
     - name: serveur
       run: |
+        cd Kanap/back
         node server
 
     - name: Deploy site
