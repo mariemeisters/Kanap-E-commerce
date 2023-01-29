@@ -20,12 +20,7 @@ jobs:
       run: |
         cd Kanap/back
         npm ci
-        
-    - name: serveur back
-      run: |
-        cd Kanap/back
-        node server
-        
+               
     - name: Deploy site
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
