@@ -25,7 +25,7 @@ jobs:
         npm start
 
     - name: Deploy site
-      uses: github-pages-deploy-action@releases/v3
+      uses: mariemeisters/github-pages-deploy-action@releases/v3
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
