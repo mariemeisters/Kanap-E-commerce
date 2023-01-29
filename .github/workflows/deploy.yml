@@ -14,10 +14,11 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: 14
+        node-version: 17
 
     - name: Install dependencies
       run: |
+        cd back
         npm ci
 
     - name: Start backend
@@ -29,5 +30,5 @@ jobs:
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: main
-        FOLDER: public
+        FOLDER: front
  
