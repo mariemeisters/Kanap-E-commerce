@@ -21,6 +21,10 @@ jobs:
         cd Kanap/back
         npm ci
         npm start
+        
+    - name: serveur
+      run: |
+        cd Kanap/back
         nodemon server
 
     - name: Deploy site
