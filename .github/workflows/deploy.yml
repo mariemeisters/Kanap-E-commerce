@@ -25,9 +25,9 @@ jobs:
         npm start
 
     - name: Deploy site
-      uses: Kanap-E-commerce/github-pages-deploy-action@releases/v3
+      uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pages
+        BRANCH: main
         FOLDER: public
  
