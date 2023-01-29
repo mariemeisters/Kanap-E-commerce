@@ -21,11 +21,16 @@ jobs:
         cd Kanap/back
         npm install
         
-    - name: serveur
+    - name: serveur back
       run: |
         cd Kanap/back
         node server
 
+    - name: serveur front
+      run: |
+        cd Kanap.front
+        node server
+        
     - name: Deploy site
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
