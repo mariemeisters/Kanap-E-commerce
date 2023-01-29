@@ -19,16 +19,11 @@ jobs:
     - name: Install dependencies
       run: |
         cd Kanap/back
-        npm install
+        npm ci
         
     - name: serveur back
       run: |
         cd Kanap/back
-        node server
-
-    - name: serveur front
-      run: |
-        cd Kanap.front
         node server
         
     - name: Deploy site
