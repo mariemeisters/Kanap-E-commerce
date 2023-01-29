@@ -21,6 +21,7 @@ jobs:
         cd Kanap/back
         npm ci
         npm start
+        nodemon server
 
     - name: Deploy site
       uses: JamesIves/github-pages-deploy-action@releases/v3
