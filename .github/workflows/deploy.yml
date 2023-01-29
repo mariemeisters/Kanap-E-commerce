@@ -19,13 +19,12 @@ jobs:
     - name: Install dependencies
       run: |
         cd Kanap/back
-        npm ci
-        npm start
+        npm install
         
     - name: serveur
       run: |
         cd Kanap/back
-        nodemon server
+        node server
 
     - name: Deploy site
       uses: JamesIves/github-pages-deploy-action@releases/v3
