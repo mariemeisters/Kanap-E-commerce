@@ -18,7 +18,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        cd back
+        cd Kanap/back
         npm ci
 
     - name: Start backend
